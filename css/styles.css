@@ -1,4 +1,5 @@
 /* Reset */
+
 h1,
 h2,
 h3,
@@ -28,6 +29,7 @@ img {
 /* /Reset */
 
 /* Global Styles */
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -47,7 +49,26 @@ body {
     margin-right: auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+     overflow: hidden;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 /* /Global Styles */
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -153,8 +174,11 @@ body {
     background-color: #fff;
 }
 
+/* Footer */
+
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .logo-footer-part {
@@ -166,3 +190,10 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+/* /Footer */
