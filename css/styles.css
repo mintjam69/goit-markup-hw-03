@@ -1,5 +1,11 @@
 /* Reset */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -69,6 +75,19 @@ body {
 
 /* /Global Styles */
 
+/* Header */
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -79,15 +98,30 @@ body {
     color: #4d5ae5;
 }
 
+.header-logo {
+    margin-right: 76px;
+}
+
 .logo-part {
     color: #2e2f42;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .nav-link {
     font-weight: 500;
     color: #2e2f42;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: inline-block;
 }
 
 .nav-link:hover,
@@ -99,10 +133,15 @@ body {
     font-style: normal;
 }
 
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .contacts-link {
     color: #434455;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    
 }
 
 .contacts-link:hover,
@@ -110,8 +149,11 @@ body {
     color: #404bbf;
 }
 
+/* /Header */
+
 .section-title {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .text-title {
@@ -121,22 +163,43 @@ body {
         color: #fff;
         letter-spacing: 0.02em;
         text-align: center;
+        max-width: 496px;
+        text-align: center;
+         margin: 0 auto 48px;
 }
 
 .button-order {
+    min-width: 169px;
+    display: block;
+    margin: auto;
     background-color: #4d5ae5;
-        font-family: inherit;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #fff;
-        cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .button-order:hover,
 .button-order:focus {
     background-color: #404bbf;
+}
+
+.features-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.features-item {
+    width: 264px;
+    display: block;
 }
 
 .heading-three {
@@ -153,10 +216,46 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 8px;
 }
 
 .team-section {
     background-color: #f4f4fd;
+}
+
+.our-team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.our-team-card-text {
+    padding: 32px 0;
+}
+
+.team-member {
+    text-align: center;
+    flex-basis: calc((100% - 72px) / 4);
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    justify-content: center;
+}
+
+.project-card {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card-text {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .heading-two {
@@ -167,6 +266,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 
 }
 
@@ -186,9 +286,8 @@ body {
 }
 
 .footer-text {
+    width: 264px;
     color: #f4f4fd;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 }
 
 .logo-footer {
